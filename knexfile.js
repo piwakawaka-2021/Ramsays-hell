@@ -6,7 +6,6 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './dev.sqlite3'
-
     },
     useNullAsDefault: true,
   },
@@ -18,10 +17,6 @@ module.exports = {
     },
     useNullAsDefault: true,
   },
-
-    }
-  },
-
 
   staging: {
     client: 'postgresql',
