@@ -27,6 +27,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.0",
+    "handlebars": "^4.7.7",
     "heroku": "^7.51.0",
     "knex": "^0.95.4",
     "pg": "^8.5.1",
