@@ -37,6 +37,7 @@ function getDish (id, db = connection) {
      return('dish')
      .where('time_tocook', num)
      .select()
+     .first()
      .catch((err) => {
         console.log(err.message)
     })
