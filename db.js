@@ -83,7 +83,7 @@ module.exports = {
     generateRandomNumber: generateRandomNumber,
     updateRandomIngredient: updateRandomIngredient,
     addDish: addDish, 
-    getAllIngredients, getAllIngredients
+    getAllIngredients: getAllIngredients
 
 
 }
