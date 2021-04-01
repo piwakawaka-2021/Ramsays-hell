@@ -34,7 +34,7 @@ function getDish (id, db = connection) {
  }
 
  function getDishByTime (num, db = connection) {
-     return('dish')
+     return db('dish')
      .where('time_tocook', num)
      .select()
      .first()
@@ -43,6 +43,22 @@ function getDish (id, db = connection) {
     })
 
  }
+
+ function generateRandomNumber (min, max) {
+     return Math.floor(Math.random() * (max - min) + min )
+ }
+
+ function updateRandomIngredient (id, num, db = connection) {
+     return db('dish_ingredients')
+     .where('dish_id', id)
+     .update({ingredient_id: num})
+     .catch((err) => {
+        console.log(err.message)
+    })
+
+ }
+
+
  
 
 module.exports = {
@@ -50,5 +66,7 @@ module.exports = {
     getAllDishes: getDish,
     getIngredientsByDishId: getIngredientsByDishId,
     getDishByTime: getDishByTime, 
+    generateRandomNumber: generateRandomNumber,
+    updateRandomIngredient: updateRandomIngredient
 
 }
