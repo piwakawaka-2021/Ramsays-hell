@@ -4,7 +4,7 @@ const env = process.env.NODE_ENV || 'development'
 const connection = knex(config[env])
 
 function getAllDishes (db = connection) {
-    return db('dishes')
+    return db('dish')
     .select()
     .catch((err) => {
         console.log(err.message)
@@ -12,7 +12,7 @@ function getAllDishes (db = connection) {
 }
 
 function getDish (id, db = connection) {
-    return db('dishes')
+    return db('dish')
     .where('id', id)
     .select()
     .first()
@@ -33,6 +33,9 @@ function getDish (id, db = connection) {
 
  }
 
+ function getDishByTimeFrame (num, db = connection) {
+     return('')
+ }
 
 module.exports = {
     getAllDishes: getAllDishes,
