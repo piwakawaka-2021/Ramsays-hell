@@ -19,8 +19,8 @@ module.exports = {
     useNullAsDefault: true,
   },
 
-    }
-  },
+    
+  
 
 
   staging: {
@@ -54,5 +54,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
-
-};
+}

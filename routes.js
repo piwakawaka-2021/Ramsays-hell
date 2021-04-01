@@ -5,9 +5,9 @@ router.use(express.urlencoded({ extended: true }))
 
 
 
-// const db = require('./db')
+const db = require('./db')
 
-const router = express.Router()
+// const router = express.Router()
 
 router.use(express.urlencoded({ extended: true }))
 
