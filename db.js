@@ -33,13 +33,21 @@ function getDish (id, db = connection) {
 
  }
 
- function getDishByTimeFrame (num, db = connection) {
-     return('')
+ function getDishByTime (num, db = connection) {
+     return('dish')
+     .where('time_tocook', num)
+     .select()
+     .catch((err) => {
+        console.log(err.message)
+    })
+
  }
+ 
 
 module.exports = {
     getAllDishes: getAllDishes,
     getAllDishes: getDish,
     getIngredientsByDishId: getIngredientsByDishId,
+    getDishByTime: getDishByTime, 
 
 }
