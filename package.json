@@ -1,0 +1,19 @@
+{
+  "name": "ramsays-hell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piwakawaka-2021/Ramsays-hell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piwakawaka-2021/Ramsays-hell/issues"
+  },
+  "homepage": "https://github.com/piwakawaka-2021/Ramsays-hell#readme"
+}
