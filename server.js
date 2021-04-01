@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 
-const Routes = require('./ingredients')
+const routes = require('./routes')
 
 const server = express()
 
@@ -13,6 +13,6 @@ server.use(express.urlencoded({ extended: true }))
 
 // Routes
 
-server.use('/', Routes)
+server.use('/', routes)
 
 module.exports = server
