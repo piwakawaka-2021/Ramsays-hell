@@ -22,6 +22,14 @@ function getDish (id, db = connection) {
 
 }
 
+function getAllIngredients (db = connection) {
+    return db('ingredients')
+    .select()
+    .orderBy('name')
+
+
+}
+
  function getIngredientsByDishId (id, db = connection) {
     return db('ingredients')
     .join('dish_ingredients', 'ingredients.id', 'dish_ingredients.ingredient_id' )
@@ -75,5 +83,7 @@ module.exports = {
     generateRandomNumber: generateRandomNumber,
     updateRandomIngredient: updateRandomIngredient,
     addDish: addDish, 
+    getAllIngredients, getAllIngredients
+
 
 }
