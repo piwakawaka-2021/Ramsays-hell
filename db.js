@@ -58,7 +58,13 @@ function getDish (id, db = connection) {
 
  }
 
-
+ function addDish (obj, db = database) {
+    return db('dish')
+    .insert(obj)
+    .catch((err) => {
+        console.log(err.message)
+    })
+ }
  
 
 module.exports = {
@@ -67,6 +73,7 @@ module.exports = {
     getIngredientsByDishId: getIngredientsByDishId,
     getDishByTime: getDishByTime, 
     generateRandomNumber: generateRandomNumber,
-    updateRandomIngredient: updateRandomIngredient
+    updateRandomIngredient: updateRandomIngredient,
+    addDish: addDish, 
 
 }
