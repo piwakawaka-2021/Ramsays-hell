@@ -12,7 +12,27 @@ header {
     justify-content: start;
 }
 
+footer {
+    position: absolute;
+}
+
 .nav-menu {
     display: flex;
     justify-content: end;
+}
+
+.display-items {
+    display: flex;
+}
+
+.display-items, img {
+    width: 30%;
+}
+
+.display-items> li {
+    justify-self: start;
+}
+
+.display-items> li:nth-child(odd) {
+    justify-self: end;
 }
