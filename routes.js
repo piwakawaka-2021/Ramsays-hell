@@ -12,9 +12,9 @@ const db = require('./db')
 router.use(express.urlencoded({ extended: true }))
 
 router.get('/', (req, res) => {
-  db.getAllDishes()
+  return db.getAllDishes()
     .then(dishes => {
-      return res.render('index', {dishes: dishes })
+      res.render('index', {dishes: dishes })
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
@@ -23,10 +23,10 @@ router.get('/', (req, res) => {
 
 router.get('/ingredients/:id', (req, res) => {
   const id=Number(req.params.id)
-  db.getMenuById(id)
+  return db.getDish(id)
   .then(dish => {
     console.log(profile)
-    return res.render('dish', {ingredients: dish})
+    res.render('dish', {dish: dish})
   })
 })
 
