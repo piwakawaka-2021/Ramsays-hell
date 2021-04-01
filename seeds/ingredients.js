@@ -16,6 +16,9 @@ exports.seed = function(knex) {
         {id: 9009, name: 'beef'},
         {id: 9010, name: 'wine'},
         {id: 9011, name: 'carrots'},
+        {id: 9012, name: 'cheese'},
+        {id: 9013, name: 'buns'},
+        {id: 9014, name: 'lettuce'},
       ]);
     });
 };

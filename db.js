@@ -22,9 +22,21 @@ function getDish (id, db = connection) {
 
 }
 
+ function getIngredientsByDishId (id, db = connection) {
+    return db('ingredients')
+    .join('dish_ingredients', 'ingredients.id', 'dish_ingredients.ingredient_id' )
+    .where('dish_id', id)
+    .select() 
+    .catch((err) => {
+        console.log(err.message)
+    })
+
+ }
+
 
 module.exports = {
     getAllDishes: getAllDishes,
     getAllDishes: getDish,
-    
+    getIngredientsByDishId: getIngredientsByDishId,
+
 }
