@@ -1,0 +1,18 @@
+body {
+    background-color: #151515;
+}
+
+header {
+    position: absolute;
+    z-index: 99;
+}
+
+.logo-image-container {
+    display: flex;
+    justify-content: start;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: end;
+}
