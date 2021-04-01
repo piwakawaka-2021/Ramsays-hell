@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/piwakawaka-2021/Ramsays-hell/issues"
   },
-  "homepage": "https://github.com/piwakawaka-2021/Ramsays-hell#readme"
+  "homepage": "https://github.com/piwakawaka-2021/Ramsays-hell#readme",
+  "dependencies": {
+    "knex": "^0.95.4",
+    "sqlite3": "^5.0.2"
+  }
 }
