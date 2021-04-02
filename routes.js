@@ -25,7 +25,7 @@ router.get('/ingredients/:id', (req, res) => {
   const id=Number(req.params.id)
   return db.getDish(id)
   .then(dish => {
-    console.log(profile)
+    
     res.render('dish', {dish: dish})
   })
 })
