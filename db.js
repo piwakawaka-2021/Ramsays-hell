@@ -22,6 +22,15 @@ function getDish (id, db = connection) {
 
 }
 
+function getAllIngredients (db = connection) {
+    return db('ingredients')
+    .select()
+    .orderBy('name')
+
+
+}
+
+
  function getIngredientsByDishId (id, db = connection) {
     return db('ingredients')
     .join('dish_ingredients', 'ingredients.id', 'dish_ingredients.ingredient_id' )
@@ -59,6 +68,13 @@ function getDish (id, db = connection) {
  }
 
 
+ function addDish (obj, db = database) {
+    return db('dish')
+    .insert(obj)
+    .catch((err) => {
+        console.log(err.message)
+    })
+ }
  
 
 module.exports = {
@@ -67,6 +83,8 @@ module.exports = {
     getIngredientsByDishId: getIngredientsByDishId,
     getDishByTime: getDishByTime, 
     generateRandomNumber: generateRandomNumber,
-    updateRandomIngredient: updateRandomIngredient
+    updateRandomIngredient: updateRandomIngredient,
+    getAllIngredients: getAllIngredients,
+    addDish: addDish,
 
 }
