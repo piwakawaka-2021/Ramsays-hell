@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "knex migrate:latest",
+    "build": "knex migrate:latest",
     "start": "node index",
     "dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,6 @@
     "url": "https://github.com/piwakawaka-2021/Ramsays-hell/issues"
   },
   "homepage": "https://github.com/piwakawaka-2021/Ramsays-hell#readme",
-
   "devDependencies": {
     "cheerio": "^1.0.0-rc.5",
     "jest": "^26.6.3",
