@@ -5,19 +5,31 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+h1{
+    font-family: 'Creepster', Arial, Helvetica, sans-serif;
+    font-size: 8vh;
+}
+
 header {
     width: 100vw;
     height: 6rem;
-    position: fixed;
+    position: absolute;
     top: 0px;
     z-index: 99;
     border-bottom: 1px solid white;
     display: grid;
 }
 
-.background-imgs {
-    width: 30vw;
-    margin: 30px
+.inner {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-container {
@@ -39,12 +51,6 @@ h1 {
 .logo-image-container {
     display: flex;
     justify-self: start;
-}
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 .background-container {
@@ -70,7 +76,6 @@ h1 {
     margin-left: 60vw;
 }
 
-
 .nav-menu {
     margin: 0px;
 
@@ -88,6 +93,7 @@ h1 {
     color: antiquewhite;
     text-decoration: none;
 }
+
 
 .form-label {
     font-size: 3rem;
@@ -107,7 +113,11 @@ h1 {
     margin-left: -75px;
 }
 
+
+.display-items> li:nth-child(odd) {
+    justify-self: end;
+}
+
 #submit {
     color: red;
 }
-
