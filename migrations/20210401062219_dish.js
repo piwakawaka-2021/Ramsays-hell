@@ -4,6 +4,7 @@ exports.up = function(knex) {
         table.increments('id')
         table.string('name')
         table.integer('time_tocook')
+        table.string('imageURL')
     })
   
 };
