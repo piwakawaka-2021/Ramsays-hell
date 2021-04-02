@@ -39,6 +39,7 @@ header {
 }
 
 .background-container {
+    margin-top: 100px;
     overflow: scroll;
     overscroll-behavior-y: contain;
     scroll-snap-type: y proximity;
@@ -50,11 +51,6 @@ header {
     list-style-type: none;
 }
 
-.display-items, img {
-    width: 30%;
-
-}
-
 .display-items> li {
     margin-right: 50vw;
     justify-self: start;
@@ -62,7 +58,7 @@ header {
 
 .display-items> li:nth-child(odd) {
     justify-self: end;
-    margin-left: 50vw;
+    margin-left: 60vw;
 }
 
 
@@ -92,7 +88,7 @@ header {
     height: 100%;
     z-index: 199;
 }
-
+/* 
 .form-container {
     height: 100vh;
     width: 100vw;
@@ -100,7 +96,23 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+} */
+
+.form-label {
+    font-size: 3rem;
 }
 
+.form, input {
+    background-color: #151515; 
+    color: antiquewhite;
+    text-align: center;
+}
 
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -65px;
+    margin-left: -75px;
+}
 

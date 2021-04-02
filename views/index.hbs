@@ -1,19 +1,24 @@
 <div class="content-container">
     <div class="background-container">
         <ul class="display-items">
-            {{#each dish}}
-            <li><a href=""><img class="background-imgs" src="{{imageURL}}"></a></li>
-            {{/each}}
+            <li>
+                <a href="/ingredients/8004">
+                    <img class="background-imgs" src="/images/burger.jpg">
+                </a>
+            </li>
+            <li><a href="/ingredients/8002"><img class="background-imgs" src="/images/Chicken-Parmesan.jpg"></a></li>
+            <li><a href="/ingredients/8005"> <img class="background-imgs" src="/images/Salad.jpg"></a></li>
+            <li><a href="/ingredients/8003"><img class="background-imgs" src="/images/spag-bol.jpg"></a></li>
+            <li><a href="/ingredients/8001"><img class="background-imgs" src="/images/veg-curry.jpg"></a></li>
         </ul>
-
     </div>
-    <div class="fixed-view">
-        <div class="form-container"> 
-            <form action="POST">
-                <label for="time">TIME</label><br>
+    {{!-- <div class="fixed-view"> --}}
+        {{!-- <div class="form-container">  --}}
+            <form class="form" action="POST">
+                <label class="form-label" for="time">TIME:</label><br>
                 <input type="text" id="time" value=""><br><br>
                 <input type="submit" value="Submit">
             </form>
-        </div>
-    </div>
-</div>
+        {{!-- </div> --}}
+    {{!-- </div> --}}
+</div>:
