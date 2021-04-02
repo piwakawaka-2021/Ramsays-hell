@@ -27,7 +27,7 @@ router.get('/ingredients/:id', (req, res) => {
   return db.getDish(id)
   .then(dish => {
     console.log("DISH:  " + dish)
-    res.render('dish', {dish: dish})
+    res.render('ingredients', {dish: dish})
   })
 })
 
