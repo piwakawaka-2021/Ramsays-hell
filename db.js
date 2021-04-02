@@ -79,7 +79,7 @@ function getAllIngredients (db = connection) {
 
 module.exports = {
     getAllDishes: getAllDishes,
-    getAllDishes: getDish,
+    getDish: getDish,
     getIngredientsByDishId: getIngredientsByDishId,
     getDishByTime: getDishByTime, 
     generateRandomNumber: generateRandomNumber,
