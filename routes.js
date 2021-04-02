@@ -31,8 +31,5 @@ router.get('/ingredients/:id', (req, res) => {
   })
 })
 
-router.get('/style.css', (req, res) => {
-  res.sendFile(__dirname + '/public/style.css')
-})
 
 module.exports = router
