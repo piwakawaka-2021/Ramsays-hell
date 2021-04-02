@@ -26,13 +26,5 @@ router.get('/ingredients/:id', (req, res) => {
   const id=Number(req.params.id)
   return db.getDish(id)
   .then(dish => {
-    console.log("DISH:  " + dish)
-    res.render('ingredients', {dish: dish})
-  })
-})
-
-router.get('/style.css', (req, res) => {
-  res.sendFile(__dirname + '/public/style.css')
-})
 
 module.exports = router
