@@ -1,27 +1,56 @@
 body {
     background-color: #151515;
+    color: antiquewhite;
+    margin: 0px;
 }
 
 header {
+    width: 100vw;
     position: absolute;
     z-index: 99;
+    border-bottom: 1px solid white;
+    display: flex;
+}
+
+.form-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-container {
+    justify-content: end;
 }
 
 .logo-image-container {
     display: flex;
-    justify-content: start;
+    justify-self: start;
+}
+
+.background-container {
+    margin: 30%;
 }
 
 footer {
+    height: 50px;
     position: absolute;
+    border-top: 1px solid white;
+    z-index: 99;
+    width: 100vw;
+    margin: 0px
 }
 
 .nav-menu {
     display: flex;
-    justify-content: end;
+    justify-self: end;
+    text-align: right;
 }
 
 .display-items {
+    list-style-type: none;
     display: flex;
 }
 
