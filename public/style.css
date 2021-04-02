@@ -2,27 +2,50 @@ body {
     background-color: #151515;
     color: antiquewhite;
     margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    font-family: 'Creepster', Arial, Helvetica, sans-serif;
+    font-size: 8vh;
 }
 
 header {
     width: 100vw;
+    height: 6rem;
     position: absolute;
+    top: 0px;
     z-index: 99;
     border-bottom: 1px solid white;
-    display: flex;
+    display: grid;
 }
 
-.form-container {
-    height: 100vh;
-    width: 100vw;
+.inner {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mainContainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-container {
-    justify-content: end;
+    height: 3rem;
+    display: absolute;
+    right: 0px;
+    top: 0px
+}
+
+h1 {
+    max-width: 50%;
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+    font-weight: 600;
+    color: red;
 }
 
 .logo-image-container {
@@ -31,37 +54,70 @@ header {
 }
 
 .background-container {
-    margin: 30%;
-}
-
-footer {
-    height: 50px;
-    position: absolute;
-    border-top: 1px solid white;
-    z-index: 99;
-    width: 100vw;
-    margin: 0px
-}
-
-.nav-menu {
-    display: flex;
-    justify-self: end;
-    text-align: right;
+    margin-top: 100px;
+    overflow: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+    width: 100%;
 }
 
 .display-items {
+    width: 100%;
     list-style-type: none;
-    display: flex;
-}
-
-.display-items, img {
-    width: 30%;
 }
 
 .display-items> li {
+    margin-right: 50vw;
     justify-self: start;
 }
 
 .display-items> li:nth-child(odd) {
     justify-self: end;
+    margin-left: 60vw;
+}
+
+.nav-menu {
+    margin: 0px;
+
+    justify-self: end;
+    text-align: right;
+    padding: 2rem;
+    
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+}
+
+.nav-link {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+
+.form-label {
+    font-size: 3rem;
+}
+
+.form, input {
+    background-color: #151515; 
+    color: antiquewhite;
+    text-align: center;
+}
+
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -65px;
+    margin-left: -75px;
+}
+
+
+.display-items> li:nth-child(odd) {
+    justify-self: end;
+}
+
+#submit {
+    color: red;
 }
