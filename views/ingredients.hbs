@@ -3,21 +3,20 @@
     <div>
         <h1>You Can Make It!!</h1>
         <h3>Thanks for checking out Ramseys Hell!</h3> <br><br> 
-
+        <img class="image-container" src="/images/{{dish.imageURL}}" >
         <p>It's been well worth your time because here's
             what you can make in the allotted time and with your available ingredients!
         </p>
         <p>Good luck, enjoy your meal, and may the odds be ever in your favour!</p>
     </div>
 
+  
+
 
     <div class="recipe-container">
         <div class="image-container">
         {{#each dish}}
-            <div >
-                <h3 class="">{{getDish/id}}</h3>
-                <a href="/getDish/{{id}}"><img class="image-container" src="{{imageURL}}" alt="{{name}}"></a>
-            </div>
+
 
         {{/each}}
 

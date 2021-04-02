@@ -10,6 +10,13 @@ h1{
     font-size: 8vh;
 }
 
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 2rem;
+}
+
 header {
     width: 100vw;
     height: 6rem;
@@ -30,6 +37,7 @@ header {
 .mainContainer{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .nav-container {
@@ -39,13 +47,15 @@ header {
     top: 0px
 }
 
-h1 {
+.header-h1 {
+    font-family: 'Creepster', Arial, Helvetica, sans-serif;
     max-width: 50%;
     position: absolute;
     left: 0;
     padding: 1rem;
     font-weight: 600;
     color: red;
+    margin-top: -1.3rem;
 }
 
 .logo-image-container {
@@ -120,4 +130,17 @@ h1 {
 
 #submit {
     color: red;
+}
+
+.background-imgs {
+    width: 30vw;
+    margin: 30px
+}
+
+/* .recipe-container {
+    margin-top: 50px;
+} */
+
+.image-container {
+    width: 50vw;
 }

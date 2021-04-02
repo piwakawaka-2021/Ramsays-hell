@@ -26,7 +26,7 @@ router.get('/ingredients/:id', (req, res) => {
   const id=Number(req.params.id)
   return db.getDish(id)
   .then(dish => {
-    console.log("DISH:  " + dish)
+    console.log("DISH:  " + dish.imageURL)
     res.render('ingredients', {dish: dish})
   })
 })
